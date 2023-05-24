@@ -110,7 +110,9 @@ function saveUserCredentialsInLocalStorage() {
 function updateUIOnUserLogin() {
   console.debug("updateUIOnUserLogin");
 
+  
   $allStoriesList.show();
 
+  //Show that they are log in by changing sign in to log out
   updateNavOnLogin();
 }

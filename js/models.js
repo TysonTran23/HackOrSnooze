@@ -194,3 +194,26 @@ class User {
     }
   }
 }
+
+/** Add a story to the list of user favorites and update the API
+ * - story: a Story instance to add to favorites
+ */
+async function addFavorite(story) {}
+/** Remove a story to the list of user favorites and update the API
+ * - story: the Story instance to remove from favorites
+ */
+
+async function removeFavorite(story) {}
+
+/** Update API with favorite/not-favorite.
+ *   - newState: "add" or "remove"
+ *   - story: Story instance to make favorite / not favorite
+ * */
+
+async function _addOrRemoveFavorite(newState, story) {}
+
+/** Return true/false if given Story instance is a favorite of this user. */
+//
+async function isFavorite(story) {
+  
+}
