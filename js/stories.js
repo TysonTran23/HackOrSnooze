@@ -31,6 +31,7 @@ function generateStoryMarkup(story) {
 
       <li id="${story.storyId}">
       <div>
+      <input type="checkbox" id="fav">
         <a href="${story.url}" target="a_blank" class="story-link">
           ${story.title}
         </a>
@@ -72,6 +73,7 @@ async function submitNewStory(evt) {
 
   const newStory = await storyList.addStory(currentUser, story);
 
+  //Create the story and put it on the storiesList
   const $story = generateStoryMarkup(newStory);
   $allStoriesList.prepend($story);
 
@@ -83,6 +85,4 @@ async function submitNewStory(evt) {
 $submitForm.on("submit", submitNewStory);
 
 //Make favorite/not-favorite star for story
-function getStarHTML(story, user) {
-  
-}
+function getStarHTML(story, user) {}

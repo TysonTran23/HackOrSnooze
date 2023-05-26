@@ -193,6 +193,7 @@ class User {
       return null;
     }
   }
+  
 }
 
 /** Add a story to the list of user favorites and update the API
